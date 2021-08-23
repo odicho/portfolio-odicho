@@ -5,7 +5,6 @@
   left: 0;
   position: fixed;
   z-index: 10;
-  min-height: 100vh;
   background: var(--main-bg-color);
   display: grid;
   grid-template-columns: var(--mobile-nav-height) auto var(--mobile-nav-height);
