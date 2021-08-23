@@ -1,0 +1,25 @@
+.imge {
+  display: grid;
+  grid-template-columns: var(--mobile-nav-height) auto var(--mobile-nav-height);
+  background: var(--main-bg-color);
+  height: var(--mobile-nav-height);
+
+  .hamburger {
+    cursor: pointer;
+    place-self: center;
+  }
+
+  img {
+    grid-column: 3;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .showMobileNav {
+    display: none;
+  }
+
+  .hamburger {
+    display: none;
+  }
+}
