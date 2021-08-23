@@ -12,7 +12,7 @@ const App = () => {
   };
 
   return (
-    <MobileNavContext.Provider value={{ showMobileNav, toggleMobileNav }}>
+    <MobileNavContext.Provider value={{ toggleMobileNav }}>
       <div className="imge">
         <img
           onClick={() => toggleMobileNav()}

@@ -17,7 +17,7 @@ const MobileNav = () => {
     return () => {
       window.removeEventListener("resize", closeOnResize);
     };
-  }, []);
+  }, [toggleMobileNav]);
 
   return (
     <div className="navbar-mobile">
