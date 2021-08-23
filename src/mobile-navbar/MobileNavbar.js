@@ -6,14 +6,12 @@ import { MobileNavContext } from "../App";
 const MobileNav = () => {
   const { toggleMobileNav } = useContext(MobileNavContext);
 
-  const closeOnResize = (e) => {
-    if (e.currentTarget.innerWidth > 768) {
-      toggleMobileNav();
-    }
-  };
-
   useEffect(() => {
-    console.log("use effect");
+    const closeOnResize = (e) => {
+      if (e.currentTarget.innerWidth > 768) {
+        toggleMobileNav();
+      }
+    };
     window.addEventListener("resize", closeOnResize);
 
     return () => {
@@ -32,16 +30,16 @@ const MobileNav = () => {
       <nav>
         <ul>
           <li>
-            <a href="/#">About</a>
+            <a href="#">About</a>
           </li>
           <li>
-            <a href="/#">Experience</a>
+            <a href="#">Experience</a>
           </li>
           <li>
-            <a href="/#">Work</a>
+            <a href="#">Work</a>
           </li>
           <li>
-            <a href="/#">Contact</a>
+            <a href="#">Contact</a>
           </li>
         </ul>
       </nav>
