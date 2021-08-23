@@ -21,7 +21,7 @@ const App = () => {
           alt=""
         />
       </div>
-      <div className="showMobileNav">{showMobileNav && <MobileNav />}</div>
+      {showMobileNav && <MobileNav />}
     </MobileNavContext.Provider>
   );
 };
